@@ -1,4 +1,4 @@
-# Master's thesis in Computer Science
+# VeriOSS master's thesis
 
 This repository contains my thesis work for the [Master's degree in Computer Science](https://www.informaticamagistrale.unifi.it/) at the [University of Florence](https://www.unifi.it/).
 
@@ -18,6 +18,6 @@ This work is the natural continuation of the research I carried out under the [S
 
 ## Other related repositories
 
-See [github.com/FrancescoMucci/LaTeX-thesis-template-cs-unifi](https://github.com/FrancescoMucci/CS-theses-and-assignments) for LaTeX template that I developed for this thesis work.
+See [github.com/FrancescoMucci/LaTeX-thesis-template-cs-unifi](https://github.com/FrancescoMucci/CS-theses-and-assignments) for the LaTeX template that I developed for this thesis work.
 
 See [github.com/FrancescoMucci/CS-theses-and-assignments](https://github.com/FrancescoMucci/CS-theses-and-assignments) for other projects and assignments done during the Bachelor's and Master's degree in Computer Science.
