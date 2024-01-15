@@ -6,7 +6,7 @@ This repository contains my thesis work for the [Master's degree in Computer Sci
 
 The goal of this thesis is to design, develop and formally verify the Solidity smart contract responsible for the partial reward process of the bounty claim protocol, an instance of a two-party fair exchange protocol, of VeriOSS, a blockchain-based bug bounty platform.
 
-This work is the natural continuation of the research I carried out under the [SysMA research unit](https://sysma.imtlucca.it/), during the 2019-2020 academic year, as holder of the research project fellowship grant **VeriOSS smart contract development** (issued by [IMT School for Advanced Studies Lucca](https://www.imtlucca.it/en) and financed with the funds of the project PAI 2018 *VeriOSS: a security-by-smart contract verification framework for Open Source Software* - P0137).
+This work is the natural continuation of the research I carried out under the [SySMA research unit](https://sysma.imtlucca.it/), during the 2019-2020 academic year, as holder of the research project fellowship grant **VeriOSS smart contract development** (issued by [IMT School for Advanced Studies Lucca](https://www.imtlucca.it/en) and financed with the funds of the project PAI 2018 *VeriOSS: a security-by-smart contract verification framework for Open Source Software* - P0137).
 
 ## Related repositories
 
@@ -18,6 +18,6 @@ This work is the natural continuation of the research I carried out under the [S
 
 ## Other related repositories
 
-See [github.com/FrancescoMucci/LaTeX-thesis-template-cs-unifi](https://github.com/FrancescoMucci/CS-theses-and-assignments) for the LaTeX template that I developed for this thesis work.
+See [github.com/FrancescoMucci/LaTeX-thesis-template-cs-unifi](https://github.com/FrancescoMucci/LaTeX-thesis-template-cs-unifi) for the LaTeX template that I developed for this thesis work.
 
 See [github.com/FrancescoMucci/CS-theses-and-assignments](https://github.com/FrancescoMucci/CS-theses-and-assignments) for other projects and assignments done during the Bachelor's and Master's degree in Computer Science.
