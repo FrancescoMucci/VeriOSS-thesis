@@ -2,10 +2,10 @@
    Bibliography - Formal verification of smart contracts
 -----------------------------------------------------------
 
-Documentazione e articoli scientifici panoramici:
--------------------------------------------------
+Revisioni sistematiche:
+-----------------------
 
-@misc{ethereum2024scfv,  
+@misc{ethereum2024scfvreview,  
   author       = {{Ethereum Foundation}},  
   title        = {Formal Verification of Smart Contracts},
   howpublished = {Parte della \textit{Ethereum Development Documentation}},
@@ -13,7 +13,7 @@ Documentazione e articoli scientifici panoramici:
   note         = {consultato in data 15 gennaio 2024}
 }
 
-@article{tolmach2021scfsvsurvey,
+@article{tolmach2021scfvreview,
   author       = {Tolmach, Palina and Li, Yi and Lin, Shang-Wei and Liu, Yang and Li, Zengxiang}, 
   title        = {A Survey of Smart Contract Formal Specification and Verification},
   journal      = {ACM Computing Surveys},
@@ -25,7 +25,7 @@ Documentazione e articoli scientifici panoramici:
   url          = {https://doi.org/10.1145/3464421}
 }
 
-@inproceedings{krichen2022scfmvreview,
+@inproceedings{krichen2022scfvreview,
   author       = {Krichen, Moez and Lahami, Mariam and Al–Haija, Qasem Abu}, 
   title        = {Formal Methods for the Verification of Smart Contracts: A Review},
   booktitle    = {15th International Conference on Security of Information and Networks (SINCONF '22)},
@@ -36,10 +36,19 @@ Documentazione e articoli scientifici panoramici:
   url          = {https://www.doi.org/10.1109/SIN56466.2022.9970534},
 }
 
+@misc{mota2023scfvreview,
+  author       = {Mota, Alexandre and Yang, Fei and Teixeira, Cristiano}, 
+  title        = {Formally Verifying a Real World Smart Contract},
+  howpublished = {Computing Research Repository: Software Engineering (arXiv)},
+  month        = {7},
+  year         = {2023},
+  url          = {https://doi.org/10.48550/arXiv.2307.02325}
+}
+
 Documentazione e articoli scientifici su SMTChecker di Solidity:
 ----------------------------------------------------------------
 
-@incollection{solidity0.8.18smtcheckerdoc,
+@incollection{solidity0.8.18smtchecker,
   author       = {{The Solidity Authors}}, 
   title        = {SMTChecker and Formal Verification},
   booktitle    = {Solidity Documentation - Release 0.8.18},
@@ -51,7 +60,7 @@ Documentazione e articoli scientifici su SMTChecker di Solidity:
   url          = {https://docs.soliditylang.org/_/downloads/en/v0.8.18/pdf/},
 }
 
-@article{otoni2023verification,
+@article{otoni2023smtchecker,
   author       = {Otoni, Rodrigo and Marescotti, Matteo and Alt, Leonardo and Eugster, Patrick and Hyv\"{a}rinen, Antti and Sharygina, Natasha}, 
   title        = {A Solicitous Approach to Smart Contract Verification},
   journal      = {ACM Transactions on Privacy and Security},
@@ -61,4 +70,46 @@ Documentazione e articoli scientifici su SMTChecker di Solidity:
   month        = {3},
   year         = {2023},
   url          = {https://doi.org/10.1145/3564699}
+}
+
+@inproceedings{marescotti2020smtchecker,
+  author       = {Marescotti, Matteo and Otoni, Rodrigo and Alt, Leonardo and Eugster, Patrick and Hyv{\"a}rinen, Antti E. J. and Sharygina, Natasha}, 
+  title        = {Accurate Smart Contract Verification Through Direct Modelling},
+  booktitle    = {Leveraging Applications of Formal Methods, Verification and Validation: Applications (ISoLA 2020)},
+  volume       = {12478},
+  series       = {Lecture Notes in Computer Science},
+  pages        = {178-194},
+  c-address    = {Rodi, Grecia},
+  publisher    = {Springer},
+  month        = {10},
+  year         = {2020},
+  url          = {https://doi.org/10.1007/978-3-030-61467-6_12}
+}
+
+@inproceedings{alt2018smtchecker,
+  author       = {Alt, Leonardo and Reitwiessner, Christian}, 
+  title        = {SMT-Based Verification of Solidity Smart Contracts},
+  booktitle    = {Leveraging Applications of Formal Methods, Verification and Validation: Industrial Practice (ISoLA 2018)},
+  volume       = {11247},
+  series       = {Lecture Notes in Computer Science},
+  pages        = {376-388},
+  c-address    = {Limisso, Cipro},
+  publisher    = {Springer},
+  month        = {10},
+  year         = {2018},
+  url          = {https://doi.org/10.1007/978-3-030-03427-6_28}
+}
+
+@inproceedings{alt2022smtchecker,
+  author       = {Alt, Leonardo and Blicha, Martin and Hyv{\"a}rinen, Antti E. J. and Sharygina, Natasha}, 
+  title        = {SolCMC: Solidity Compiler's Model Checker},
+  booktitle    = {Computer Aided Verification (CAV 2022)},
+  volume       = {13371},
+  series       = {Lecture Notes in Computer Science},
+  pages        = {325-338},
+  c-address    = {Haifa, Israele},
+  publisher    = {Springer},
+  month        = {8},
+  year         = {2022},
+  url          = {https://doi.org/10.1007/978-3-031-13185-1_16}
 }
