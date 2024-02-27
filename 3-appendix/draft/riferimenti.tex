@@ -1,8 +1,9 @@
-\addChapterBookmark{Test della bibliografia}{bookmark:bibtest}
-% Although we do not include an entry for the bibliography test in the table of contents itself, we create a bookmark for it at level 0.
-
-\chapter*{Test della bibliografia}
-\label{appendix:bib-test}
+\addChapterBookmark{Riferimenti bibliografici per argomento}{bookmark:bibref}
+% Although we do not include an entry for the references list in the table of contents itself, we create a bookmark for it at level 0.
+\chapter*{Riferimenti bibliografici per argomento}
+\label{appendix:bibref}
+% The starred variants of all sectioning commands (\chapter*, \section*, ...) produce unnumbered headings which do not appear in the table of contents or in the page header. The absence of a running head often has an unwanted side effect: if, for example, a chapter set using \chapter* spans several pages, then the running head of the previous chapter suddenly reappears; so we need to use the command "\markboth{<left-mark>}{<right-mark>}" to customize the page header (the left-mark will normally be used in the header of even pages and right-mark in the header of odd pages; with one-sided printing, only the right-mark exists).
+\markboth{Riferimenti bibliografici per argomento}{Riferimenti bibliografici per argomento}
 
 \acresetall
 % Empty the memory of the "\ac" macro: each time you use an acronym for the first time, the full name and the short name in brackets will be printed; afterwards only the acronym will be printed.
@@ -11,7 +12,7 @@
 %Le appendici dovrebbero includere materiale che, pur essendo necessario per comprendere il lavoro svolto, non rappresenta una parte centrale della tesi o non può essere inserito nel testo principale a causa delle sue dimensioni eccessive o del formato particolare \cite{tuni2019guide}.
 %----------------------------------------------%
 
-\addSectionBookmark{Introduzione all'appendice}{bookmark:bibtest-intro}
+\addSectionBookmark{Introduzione all'appendice}{bookmark:bibref-intro}
 \section*{Introduzione all'appendice}
 
 %----------SUGGERIMENTI-SUL-CONTENUTO----------%
@@ -20,7 +21,7 @@
 
 In questa appendice, riservata unicamente alla bozza della tesi, vengono presentati i riferimenti bibliografici consultati, organizzati in base all'argomento e alla tipologia di documento.
 
-\addSectionBookmark{VeriOSS}{bookmark:bibtest-verioss}
+\addSectionBookmark{VeriOSS}{bookmark:bibref-verioss}
 \section*{VeriOSS}
 
 \subsection*{Articoli scientifici di Costa et al.}
@@ -32,7 +33,7 @@ In questa appendice, riservata unicamente alla bozza della tesi, vengono present
 
 \end{itemize}
 
-\addSectionBookmark{Piattaforme bug bounty}{bookmark:bibtest-bugbonty}
+\addSectionBookmark{Piattaforme bug bounty}{bookmark:bibref-bugbonty}
 \section*{Piattaforme bug bounty}
 
 \subsection*{Tesi di dottorato di Walshe e articoli scientifici di Walshe et al.}
@@ -64,7 +65,7 @@ In questa appendice, riservata unicamente alla bozza della tesi, vengono present
 
 \end{itemize}
 
-\addSectionBookmark{Piattaforme bug bounty basate sulle blockchain}{bookmark:bibtest-blockchainbounty}
+\addSectionBookmark{Piattaforme bug bounty basate sulle blockchain}{bookmark:bibref-blockchainbounty}
 \section*{Piattaforme bug bounty basate sulle blockchain}
 
 \subsection*{Articoli scientifici di Hoffman et al. su Bountychain}
@@ -117,7 +118,7 @@ In questa appendice, riservata unicamente alla bozza della tesi, vengono present
 
 \end{itemize}
 
-\addSectionBookmark{Protocolli di fair exchange basati sulla blockchain}{bookmark:bibtest-fairchain}
+\addSectionBookmark{Protocolli di fair exchange basati sulla blockchain}{bookmark:bibref-fairchain}
 \section*{Protocolli di fair exchange basati sulla blockchain}
 
 \subsection*{Articoli scientifici su FairSwap}
@@ -165,7 +166,7 @@ In questa appendice, riservata unicamente alla bozza della tesi, vengono present
 
 \end{itemize}
 
-\addSectionBookmark{Proof of Knowledge}{bookmark:bibtest-pok}
+\addSectionBookmark{Proof of Knowledge}{bookmark:bibref-pok}
 \section*{Proof of Knowledge}
 
 \subsection*{Monografie}
@@ -204,7 +205,7 @@ In questa appendice, riservata unicamente alla bozza della tesi, vengono present
 
 \end{itemize}
 
-\addSectionBookmark{Proof of Knowledge per la blockchain}{bookmark:bibtest-pokchain}
+\addSectionBookmark{Proof of Knowledge per la blockchain}{bookmark:bibref-pokchain}
 \section*{Proof of Knowledge per la blockchain}
 
 \subsection*{Revisioni sistematiche}
@@ -218,7 +219,7 @@ In questa appendice, riservata unicamente alla bozza della tesi, vengono present
 
 \end{itemize}
 
-\addSectionBookmark{Blockchain, Ethereum e Solidity}{bookmark:bibtest-ethereum}
+\addSectionBookmark{Blockchain, Ethereum e Solidity}{bookmark:bibref-ethereum}
 \section*{Fondamenti di Blockchain, Ethereum e Solidity}
 
 \subsection*{Libri generici sulla blockchain}
@@ -283,7 +284,7 @@ In questa appendice, riservata unicamente alla bozza della tesi, vengono present
 \end{itemize}
 
 \clearpage
-\addSectionBookmark{Architettura e sviluppo di applicazioni blockchain-based}{bookmark:blockchain-based-dev}
+\addSectionBookmark{Architettura e sviluppo di applicazioni blockchain-based}{bookmark:bibref-blockchain-app}
 \section*{Architettura e sviluppo di applicazioni blockchain-based}
 
 \subsection*{Libro e articoli scientifici di Xu et al.}
@@ -366,7 +367,7 @@ In questa appendice, riservata unicamente alla bozza della tesi, vengono present
 \end{itemize}
 
 \clearpage
-\addSectionBookmark{Oracoli blockchain}{bookmark:oracle}
+\addSectionBookmark{Oracoli blockchain}{bookmark:bibref-oracle}
 \section*{Oracoli blockchain}
 
 \subsection*{Introduzione agli oracoli blockchain}
@@ -416,7 +417,7 @@ In questa appendice, riservata unicamente alla bozza della tesi, vengono present
 
 \end{itemize}
 
-\addSectionBookmark{Off-chain data storages}{bookmark:offchain}
+\addSectionBookmark{Off-chain data storages}{bookmark:bibref-offchain}
 \section*{Off-chain data storages}
 
 \subsection*{Confronto tra on-chain e off-chain data storages}
@@ -457,7 +458,7 @@ In questa appendice, riservata unicamente alla bozza della tesi, vengono present
 
 \end{itemize}
 
-\addSectionBookmark{Fondamenti di verifica formale}{bookmark:formalver}
+\addSectionBookmark{Fondamenti di verifica formale}{bookmark:bibref-formalver}
 \section*{Fondamenti di verifica formale}
 
 \subsection*{Libri di testo}
@@ -549,7 +550,7 @@ In questa appendice, riservata unicamente alla bozza della tesi, vengono present
 \end{itemize}
 
 \clearpage
-\addSectionBookmark{Verifica Formale di Smart Contract}{bookmark:smartcontract-formalver}
+\addSectionBookmark{Verifica Formale di Smart Contract}{bookmark:bibref-smartverif}
 \section*{Verifica formale di smart contract}
 
 \subsection*{Revisioni sistematiche}
@@ -582,7 +583,7 @@ In questa appendice, riservata unicamente alla bozza della tesi, vengono present
 
 \end{itemize}
 
-\addSectionBookmark{Debugging}{bookmark:debugging}
+\addSectionBookmark{Debugging}{bookmark:bibref-debugging}
 \section*{Debugging}
 
 \subsection*{Revisioni sistematiche}
@@ -612,7 +613,7 @@ In questa appendice, riservata unicamente alla bozza della tesi, vengono present
 
 \end{itemize}
 
-\addSectionBookmark{Weakest precondition calculus}{bookmark:wpc}
+\addSectionBookmark{Weakest precondition calculus}{bookmark:bibref-wpc}
 \section*{Weakest precondition calculus}
 
 \subsection*{Articoli scientifici seminali}
@@ -640,7 +641,7 @@ In questa appendice, riservata unicamente alla bozza della tesi, vengono present
 
 \end{itemize}
 
-\addSectionBookmark{Symbolic execution}{bookmark:symbexe}
+\addSectionBookmark{Symbolic execution}{bookmark:bibref-symbexe}
 \section*{Symbolic execution}
 
 \subsection*{Revisioni sistematiche}
@@ -672,7 +673,7 @@ In questa appendice, riservata unicamente alla bozza della tesi, vengono present
 
 \end{itemize}
 
-\addSectionBookmark{Symbolic execution con angr}{bookmark:angr}
+\addSectionBookmark{Symbolic execution con angr}{bookmark:bibref-angr}
 \section*{Symbolic execution con angr}
 
 \subsection*{Documentazione}
@@ -702,7 +703,7 @@ In questa appendice, riservata unicamente alla bozza della tesi, vengono present
 
 \end{itemize}
 
-\addSectionBookmark{Backward symbolic execution}{bookmark:backsymbexe}
+\addSectionBookmark{Backward symbolic execution}{bookmark:bibref-backsymbexe}
 \section*{Backward symbolic execution}
 
 \subsection*{Backward symbolic execution via weakest precondition calculus}
