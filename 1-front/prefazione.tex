@@ -2,6 +2,7 @@
 % The starred variants of all sectioning commands (\chapter*, \section*, ...) produce unnumbered headings which do not appear in the table of contents or in the page header. The absence of a running head often has an unwanted side effect: if, for example, a chapter set using \chapter* spans several pages, then the running head of the previous chapter suddenly reappears; so we need to use the command "\markboth{<left-mark>}{<right-mark>}" to customize the page header (the left-mark will normally be used in the header of even pages and right-mark in the header of odd pages; with one-sided printing, only the right-mark exists).
 \markboth{Prefazione}{Prefazione}
 
+%----------SUGGERIMENTI-SUL-CONTENUTO----------%
 %La prefazione offre al candidato uno spazio per includere informazioni che non si adattano facilmente agli altri capitoli della tesi; ad esempio, potrebbero essere esplorate le motivazioni personali che hanno guidato la scelta dell'argomento di ricerca.
 %
 %\medskip
@@ -16,6 +17,7 @@
 %\item i link alle repository GitHub correlate al lavoro di tesi;
 %\item la data dell'ultima revisione del testo.
 %\end{itemize}
+%----------------------------------------------%
 
 Durante l'anno accademico 2019-2020 ho collaborato con l'unità di ricerca \href{https://sysma.imtlucca.it/}{SySMA} della \href{https://www.imtlucca.it/it}{Scuola IMT Alti Studi Lucca} in qualità di beneficiario della borsa di ricerca \href{https://www.imtlucca.it/it/jobopportunity/verioss-smart-contract-development}{\textbf{VeriOSS smart contract development}} (finanziata con i fondi del progetto PAI 2018 "\textit{VeriOSS: a security-by-smart contract verification framework for Open Source Software}" - P0137). L'obiettivo della borsa era quello di progettare e sviluppare smart contract Solidity a supporto del protocollo di fair exchange di VeriOSS, una piattaforma per la bug bounty basata sulla blockchain. Il lavoro di tesi svolto prosegue e conclude quanto iniziato durante la suddetta collaborazione di ricerca.
 
@@ -25,12 +27,41 @@ Tutto il materiale prodotto per questo lavoro di tesi è accessibile attraverso 
 
 \begin{itemize}
 
-\item i file \latex associati a questo documento di tesi si trovano in \myThesisRepo.
+\item i file \latex associati a questo documento si trovano in \myThesisRepo;
 
 \item il codice implementato è disponibile in \myCodeRepo;
 
 \item infine, i diagrammi di sequenza, di stato e di classe sono raccolti in \myDiagramsRepo.
 
 \end{itemize}
+
+Questa tesi è stato realizzata utilizzando come base un template che ho sviluppato a partire da \href{https://www.informaticamagistrale.unifi.it/vp-17-per-laurearsi.html}{quello fornito dal Corso di Laurea Magistrale in Informatica dell'Università degli Studi di Firenze}. Tale template è pubblicamente accessibile nella seguente repository GitHub: \myThesisTemplateRepo.
+
+%\medskip
+%
+%La struttura (capitoli e sezioni) del template è stata derivata a partire dalle indicazioni fornite da:
+%\begin{itemize}
+%
+%\item Zobel in \textit{"Writing for Computer Science"} \cite{zobel2015writing};
+%
+%\item Pfandzelter \etAl in \textit{"Writing a Computer Science Thesis"} \cite{pfandzelter2022thesis};
+%
+%\item Shoaff in \textit{"How to Write a Master's Thesis in Computer Science"} \cite{shoaff2001thesis};
+%
+%\item Männistö \etAl in \textit{"Scientific Writing - Guide of the Empirical Software Engineering Research Group of the University of Helsinki"} \cite{mannisto2022guide};
+%
+%\item Aceto in \textit{"How to Write a Paper"} \cite{aceto2023paper};
+%
+%\item la \textit{Tampere University} in \textit{"Guide to Writing a Thesis in Technical Fields"} \cite{tuni2019guide};
+%
+%\item la \textit{Libera Università di Bolzano} in \textit{"Master in Computer Science - Guidelines for the Thesis"} \cite{unibz2022thesis};
+%
+%\item la \textit{Harran University} in \textit{"Software Design Report"} \cite{harran2023design};
+%
+%\item il laboratorio \textit{Computer Science 7 (Computer Networks and Communication Systems)} della \textit{Friedrich-Alexander Universität} sulla \href{https://www.cs7.tf.fau.eu/teaching/student-theses/writing-your-thesis/}{pagina dedicata alle linee guida per la tesi} \cite{fau2023thesis}.
+%
+%\end{itemize}
+
+\medskip
 
 Per individuare e correggere involontarie somiglianze o citazioni non adeguate, è stato utilizzato \myAntiplagio, il software antiplagio messo a disposizione dall'Università degli Studi di Firenze.
