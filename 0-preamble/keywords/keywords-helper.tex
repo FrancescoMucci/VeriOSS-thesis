@@ -54,6 +54,25 @@
 
 %--------------------------------------------------------------
 
+%-------------------HREF-KEYWORDS------------------------------
+
+% The "\hrefKeyword{\<name>}{<URL>}{<text>}" command can be used to define a keyword for...
+
+% Basic version.
+%\newcommand{\hrefKeyword}[3]{%
+%	\newcommand{#1}{\href{#2}{#3}\xspace}%
+%}
+
+% Improved version.
+\newcommand{\hrefKeyword}[3]{%
+	\keyword{#1}{\href{#2}{#3}}%
+}
+
+% For testing.
+\hrefKeyword{\Ubuntu}{https://ubuntu.com/}{Ubuntu}
+
+%--------------------------------------------------------------
+
 %----------------------ACRONYM-KEYWORDS------------------------
 
 % The "\acroKeyword{\<name>}{<acronym>}" command can be used to define a keywords for a defined acronym.
