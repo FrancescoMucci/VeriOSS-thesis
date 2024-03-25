@@ -44,7 +44,7 @@
 %\end{itemize}
 %----------------------------------------------%
 
-\section{Nozioni preliminari}
+\section{Programmi bug bounty}
 
 %----------SUGGERIMENTI-SUL-CONTENUTO----------%
 %Iniziamo con l'introduzione di concetti, definizioni e teorie fondamentali che costituiscono le basi del nostro lavoro. Questa sezione potrebbe includere, ad esempio, modelli matematici e teoremi essenziali per la comprensione della tesi.
@@ -54,9 +54,9 @@
 %È importante tenere a mente che non stiamo scrivendo un libro di testo: ogni volta che introduciamo un termine o un concetto sarà sufficiente fornirne una breve spiegazione e includere un riferimento bibliografico; in tal modo il lettore potrà approfondire autonomamente l'argomento \cite{tuni2019guide}.
 %----------------------------------------------%
 
-\subsection{Programmi bug bounty}
+\subsection{Definizioni}
 
-\subsubsection{Definizioni relative ai programmi bug bounty}
+% RIMUOVERE L'AMBIENTE DEFINIZIONE CHE MI SEMBRA APPESANTISCA
 
 \begin{definizione}[\Bug]
 Il termine \bug identifica un qualunque difetto presente in un software che può alterarne il comportamento rispetto a quello atteso \cite{fryer2017bugbounty, bettini2021tdd15}.
@@ -66,25 +66,21 @@ Il termine \bug identifica un qualunque difetto presente in un software che può
 Una \vulnerability indica un \bug che può essere sfruttato per portare alla compromissione di uno degli attributi di sicurezza del software (confidenzialità, integrità e disponibilità) \cite{fryer2017bugbounty, mitropoulos2017securing}.
 \end{definizione}
 
-%AGGIUNGI DEFINIZIONE DI HACKER
-
-%FONTI
-%\begin{definizione}[Hacker]
-%Un hacker è un individuo con avanzate competenze informatiche e tecnologiche, che esplora, modifica o manipola sistemi software e hardware. In questo lavoro di tesi,  quando parliamo di hacker, ci riferiremo in particolare a esperti, ricercatori e appassionati di sicurezza informatica.
-%\end{definizione}
-
-%FONTI
-%\begin{definizione}[White hat hacker]
-%Un "white hat hacker", noto anche come hacker etico, è un esperto, un ricercatore o un appassionato di sicurezza informaticaun che, operando con l'autorizzazione dei proprietari di sistemi informatici e in conformità con le leggi vigenti, utilizza le proprie competenze per identificare e, se possibile, correggere vulnerabilità in tali sistemi.
-%\end{definizione}
-
-\begin{definizione}[\emph{\acl{CVD}}]
-Un \CVD è un approccio adottabile da un'organizzazione per identificare \vulnerability presenti nei propri prodotti software tramite il supporto della comunità formata da esperti, ricercatori e appassionati di sicurezza informatica, esterni rispetto all'organizzazione stessa \cite{walshe2023bountythesis2, walshe2022cvdpaper}.
+\begin{definizione}[\Hacker]
+Un \hacker può essere definito come un individuo che cerca \vulnerability in sistemi informatici con uno dei seguenti scopi: (1) affinare le proprie abilità tecniche e acquisire conoscenza; (2) eseguire attacchi informatici; (3) migliorare la sicurezza del sistema in esame \cite{oliver2020hacker}. Tali individui possono essere, ad esempio, professionisti, ricercatori o appassionati di sicurezza informatica.
 \end{definizione}
 
-%\begin{definizione}[\emph{\acl{CVD}}]
-%Un \CVD è un approccio adottabile da un'organizzazione per identificare \vulnerability presenti nei propri prodotti software tramite il supporto della comunità di white hat hacker esterni rispetto all'organizzazione stessa \cite{walshe2023bountythesis2, walshe2022cvdpaper}.
-%\end{definizione}
+\begin{definizione}[\WhiteHatHacker]
+Un \whitehathacker è un \hacker che opera con l'autorizzazione dei proprietari di sistemi informatici e in conformità con le leggi vigenti, utilizzando le proprie competenze per identificare e, se possibile, correggere le \vulnerability presenti in tali sistemi \cite{walshe2020bountypaper}.
+\end{definizione}
+
+\begin{definizione}[\emph{\acl{CVD}} (prima versione)]
+Un \CVD è un approccio adottabile da un'organizzazione per identificare \vulnerability presenti nei propri prodotti software tramite il supporto della comunità formata da professionisti, ricercatori e appassionati di sicurezza informatica, esterni rispetto all'organizzazione stessa \cite{walshe2023bountythesis2, walshe2022cvdpaper}.
+\end{definizione}
+
+\begin{definizione}[\emph{\acl{CVD}} (seconda versione)]
+Un \CVD è un approccio adottabile da un'organizzazione per identificare \vulnerability presenti nei propri prodotti software tramite il supporto della comunità di \whitehathacker esterni rispetto all'organizzazione stessa \cite{walshe2023bountythesis2, walshe2022cvdpaper}.
+\end{definizione}
 
 \begin{definizione}[\emph{\acl{BBP}}]
 Un \BBP è una tipologia di \CVD in cui vengono offerte ricompense monetarie in cambio dei report relativi alle \vulnerability identificate \cite{walshe2023bountythesis2, walshe2022cvdpaper, akgul2020bughunters}.
@@ -94,19 +90,25 @@ Un \BBP è una tipologia di \CVD in cui vengono offerte ricompense monetarie in 
 Un \CVD in cui non vengono offerte ricompense monetarie viene normalmente chiamato \VDP \cite{walshe2023bountythesis2, walshe2022cvdpaper, akgul2020bughunters}.
 \end{definizione}
 
-\subsubsection{Terminologia adottata per i programmi bug bounty}
+\subsection{Terminologia}
+
+% RIMUOVERE L'AMBIENTE DEFINIZIONE CHE MI SEMBRA APPESANTISCA
 
 \begin{definizione}[\emph{\acl{BI}}]
 Con il termine \BI indichiamo l'organizzazione (e.g. azienda, università o ente) che, attraverso un \BBP, offre ricompense per le \vulnerability presenti nei propri prodotti software \cite{canidio2021verioss}.
 \end{definizione}
 
-\begin{definizione}[\emph{\acl{BH}}]
-Con l'espressione \BH denotiamo un esperto, un ricercatore o un'appassionato di sicurezza informatica, indipendente rispetto al \BI, che cerca \vulnerability nel software designato da quest'ultimo \cite{canidio2021verioss}. 
+\begin{definizione}[\emph{\acl{BH}} (prima versione)]
+Con l'espressione \BH denotiamo un professionista, un ricercatore o un'appassionato di sicurezza informatica, indipendente rispetto al \BI, che cerca \vulnerability nel software designato da quest'ultimo \cite{canidio2021verioss}. 
 \end{definizione}
 
-%\begin{definizione}[\emph{\acl{BH}}]
-%Nel contesto dei \BBP, con il termine \BH indichiamo un white hat hacker, indipendente rispetto al \BI, che cerca \vulnerability nel software designato da quest'ultimo \cite{canidio2021verioss}. 
-%\end{definizione}
+\begin{definizione}[\emph{\acl{BH}} (seconda versione)]
+Con l'espressione \BH denotiamo un \whitehathacker, indipendente rispetto al \BI, che cerca \vulnerability nel software designato da quest'ultimo \cite{canidio2021verioss}. 
+\end{definizione}
+
+\begin{definizione}[\emph{\acl{BH}} (terza versione)]
+Con l'espressione \BH denotiamo la persona (e.g. professionista, ricercatore o appassionato di sicurezza informatica), indipendente rispetto al \BI, che cerca \vulnerability nel software designato da quest'ultimo \cite{canidio2021verioss}. 
+\end{definizione}
 
 \begin{definizione}[\BugBounty]
 Con \bugbounty indichiamo una descrizione, pubblicata dal \BI, che specifica quali applicazioni software sono testabili, quali tipologie di \vulnerability sono considerabili valide, le ricompense proposte e altri vincoli legali che il \BH dovrà rispettare \cite{hoffman2021bountychain, hoffman2020bountychain}. In sostanza una \bugbounty specifica le linee guida, spesso identificate con il termine di \emph{safe harbor} o \emph{rules of engagement}, che permettono al \BH di ricercare \vulnerability in modo del tutto legale \cite{walshe2022cvdpaper, walshe2020bountypaper, walshe2023bountythesis3}.
@@ -120,7 +122,9 @@ Con \bugbounty indichiamo una descrizione, pubblicata dal \BI, che specifica qua
 Con l'espressione \bugreport indichiamo una descrizione dettagliata, prodotta dal \BH, per descrivere una \vulnerability identificata \cite{hoffman2021bountychain}.
 \end{definizione}
 
-\subsubsection{Interazione nei programmi bug bounty}
+\subsection{Interazione}
+
+%\subsection{Interazione tra issuer e hunter}
 
 Descriviamo brevemente l'interazione tra il \BI e il \BH \cite{hoffman2021bountychain}:
 \begin{enumerate}
@@ -135,9 +139,11 @@ Descriviamo brevemente l'interazione tra il \BI e il \BH \cite{hoffman2021bounty
 
 \end{enumerate}
 
-\subsubsection{Classificazione dei programmi bug bounty}
+\subsection{Classificazione}
 
-%AGGIUNGERE GRAFICO
+% INGLOBARE QUESTA SEZIONE CON LA PRECENDENTE
+
+% AGGIUNGERE GRAFICO
 
 Possiamo classificare i \BBP in base al fatto che l'interazione tra il \BI e il \BH avvenga direttamente o tramite da un intermediario:
 
@@ -152,16 +158,20 @@ esempi di queste piattaforme sono \HackerOne, \Intigriti, \Bugcrowd, \Synack e \
 
 \end{itemize}
 
-\subsubsection{Storia dei programmi bug bounty}
+\subsection{Storia}
+
+%\subsection{Adozione e vantaggi}
 
 Alla fine del 1995, l'azienda statunitense Netscape fu la prima a implementare un \BBP al fine di individuare eventuali difetti software presenti nel web browser Netscape Navigator; tuttavia, bisognerà attendere i primi anni duemila affinché l'uso di questi programmi cominci a diffondersi maggiormente \cite{hoffman2021bountychain}.
 Ad oggi, le aziende di piccole o medie dimensioni che desiderano avviare un \BBP si affidano a una delle varie \bugbountyplatform esistenti, mentre solo le aziende di grandi dimensioni -- come \GoogleBBP, \MetaBBP o {\MicrosoftBBP} -- possono permettersi di gestire dei programmi interni \cite{walshe2023bountythesis3}.
 
-\subsubsection{Vantaggi dei programmi bug bounty}
+\subsection{Vantaggi}
 
-L'adozione dei \BBP offre alla comunità degli hacker una via legale per la segnalazione delle \vulnerability, disincentivando così l'utilizzo del mercato nero \cite{fryer2017bugbounty, walshe2020bountypaper, walshe2023bountythesis3} e amplificando la probabilità che vengano scoperti \bug che altrimenti sarebbero rimasti nascosti agli occhi degli eventuali team di cybersecurity a disposizione delle aziende \cite{walshe2020bountypaper}.
+% INGLOBARE CON LA SEZIONE PRECEDENTE
 
-\subsubsection{Limitazioni dei programmi bug bounty}
+L'adozione dei \BBP offre alla comunità degli \hacker una via legale per la segnalazione delle \vulnerability, disincentivando così l'utilizzo del mercato nero \cite{fryer2017bugbounty, walshe2020bountypaper, walshe2023bountythesis3} e amplificando la probabilità che vengano scoperti \bug che altrimenti sarebbero rimasti nascosti agli occhi degli eventuali team di cybersecurity a disposizione delle aziende \cite{walshe2020bountypaper}.
+
+\subsection{Limitazioni}
 
 Una delle limitazioni più importanti degli \internalBBP è il fatto che, una volta che il \BI ha ricevuto il \bugreport, questi è fortemente incentivano a considerare i bug segnalati come poco critici o non validi al fine di ridurre al minimo la ricompensa per il \BH \cite{canidio2021verioss, akgul2023bughunters}; questa situazione rende il mercato inefficiente per i \BH che risultano, di conseguenza, portati a cercare altre vie per la vendita dei bug \cite{canidio2021verioss}.
 
@@ -182,7 +192,7 @@ Tuttavia anche le piattaforme bug bounty presentano delle criticità \cite{badas
 
 \end{enumerate}
 
-\subsubsection{Approccio di divulgazione delle vulnerabilità}
+\subsection{Divulgazione delle vulnerabilità}
 
 I \BBP possono anche essere distinti in base all'approccio adottato per la divulgazione della \vulnerability identificate dai \BH; in particolare, esistono tre principali approcci di divulgazione \cite{lisi2022ard, cavusoglu2007vulndisc}:
 \begin{itemize}
@@ -204,7 +214,9 @@ Seguendo il \fullpublicdisclosure, il \BI è motivato a realizzare un aggiorname
 
 L'impiego del \responsibledisclosure incentiva il \BI attraverso il potenziale danno di immagine dovuto alla diffusione pubblica della \vulnerability, fornendogli al contempo il modo di correggerla prima che attori malevoli possano sfruttarla. Quest'approccio, purtroppo, non risulta privo di problemi: il suo utilizzo presuppone il coinvolgimento di un mediatore tra \BI e \BH, presentando così limitazioni paragonabili a quelle associate all'utilizzo delle \bugbountyplatform.
 
-\subsubsection{Riferimenti bibliografici aggiuntivi}
+\subsection{Riferimenti bibliografici aggiuntivi}
+
+% RICONTROLLA PRIMA DELLA CONSEGNA
 
 Per eventuali approfondimenti sui \BBP, oltre ai lavori già citati nel testo, si rimanda ai seguenti documenti: 
 \begin{itemize}
@@ -217,11 +229,25 @@ Per eventuali approfondimenti sui \BBP, oltre ai lavori già citati nel testo, s
 
 \end{itemize}
 
-%CONTROLLA DOPO AVER FINITO TUTTO
+\section{Protocollli di fair exchange}
 
-\subsection{Protocollli di fair exchange}
+%----------SUGGERIMENTI-SUL-CONTENUTO----------%
+%Iniziamo con l'introduzione di concetti, definizioni e teorie fondamentali che costituiscono le basi del nostro lavoro. Questa sezione potrebbe includere, ad esempio, modelli matematici e teoremi essenziali per la comprensione della tesi.
+%
+%\medskip
+%
+%È importante tenere a mente che non stiamo scrivendo un libro di testo: ogni volta che introduciamo un termine o un concetto sarà sufficiente fornirne una breve spiegazione e includere un riferimento bibliografico; in tal modo il lettore potrà approfondire autonomamente l'argomento \cite{tuni2019guide}.
+%----------------------------------------------%
 
-\subsection{Blockchain}
+\section{Blockchain}
+
+%----------SUGGERIMENTI-SUL-CONTENUTO----------%
+%Iniziamo con l'introduzione di concetti, definizioni e teorie fondamentali che costituiscono le basi del nostro lavoro. Questa sezione potrebbe includere, ad esempio, modelli matematici e teoremi essenziali per la comprensione della tesi.
+%
+%\medskip
+%
+%È importante tenere a mente che non stiamo scrivendo un libro di testo: ogni volta che introduciamo un termine o un concetto sarà sufficiente fornirne una breve spiegazione e includere un riferimento bibliografico; in tal modo il lettore potrà approfondire autonomamente l'argomento \cite{tuni2019guide}.
+%----------------------------------------------%
 
 % DLT
 
