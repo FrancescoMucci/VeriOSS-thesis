@@ -56,75 +56,89 @@
 
 \subsection{Definizioni}
 
-% RIMUOVERE L'AMBIENTE DEFINIZIONE CHE MI SEMBRA APPESANTISCA
-
-\begin{definizione}[\Bug]
+%\begin{definizione}[\Bug]
 Il termine \bug identifica un qualunque difetto presente in un software che può alterarne il comportamento rispetto a quello atteso \cite{fryer2017bugbounty, bettini2021tdd15}.
-\end{definizione}
+%\end{definizione}
 
-\begin{definizione}[\Vulnerability]
+\medskip
+
+%\begin{definizione}[\Vulnerability]
 Una \vulnerability indica un \bug che può essere sfruttato per portare alla compromissione di uno degli attributi di sicurezza del software (confidenzialità, integrità e disponibilità) \cite{fryer2017bugbounty, mitropoulos2017securing}.
-\end{definizione}
+%\end{definizione}
 
-\begin{definizione}[\Hacker]
+\medskip
+
+%\begin{definizione}[\Hacker]
 Un \hacker può essere definito come un individuo che cerca \vulnerability in sistemi informatici con uno dei seguenti scopi: (1) affinare le proprie abilità tecniche e acquisire conoscenza; (2) eseguire attacchi informatici; (3) migliorare la sicurezza del sistema in esame \cite{oliver2020hacker}. Tali individui possono essere, ad esempio, professionisti, ricercatori o appassionati di sicurezza informatica.
-\end{definizione}
+%\end{definizione}
 
-\begin{definizione}[\WhiteHatHacker]
+\medskip
+
+%\begin{definizione}[\WhiteHatHacker]
 Un \whitehathacker è un \hacker che opera con l'autorizzazione dei proprietari di sistemi informatici e in conformità con le leggi vigenti, utilizzando le proprie competenze per identificare e, se possibile, correggere le \vulnerability presenti in tali sistemi \cite{walshe2020bountypaper}.
-\end{definizione}
+%\end{definizione}
 
-\begin{definizione}[\emph{\acl{CVD}} (prima versione)]
-Un \CVD è un approccio adottabile da un'organizzazione per identificare \vulnerability presenti nei propri prodotti software tramite il supporto della comunità formata da professionisti, ricercatori e appassionati di sicurezza informatica, esterni rispetto all'organizzazione stessa \cite{walshe2023bountythesis2, walshe2022cvdpaper}.
-\end{definizione}
+\medskip
 
-\begin{definizione}[\emph{\acl{CVD}} (seconda versione)]
+%\begin{definizione}[\emph{\acl{CVD}} (prima versione)]
+%Un \CVD è un approccio adottabile da un'organizzazione per identificare \vulnerability presenti nei propri prodotti software tramite il supporto della comunità formata da professionisti, ricercatori e appassionati di sicurezza informatica, esterni rispetto all'organizzazione stessa \cite{walshe2023bountythesis2, walshe2022cvdpaper}.
+%\end{definizione}
+
+\medskip
+
+%\begin{definizione}[\emph{\acl{CVD}} (seconda versione)]
 Un \CVD è un approccio adottabile da un'organizzazione per identificare \vulnerability presenti nei propri prodotti software tramite il supporto della comunità di \whitehathacker esterni rispetto all'organizzazione stessa \cite{walshe2023bountythesis2, walshe2022cvdpaper}.
-\end{definizione}
+%\end{definizione}
 
-\begin{definizione}[\emph{\acl{BBP}}]
+\medskip
+
+%\begin{definizione}[\emph{\acl{BBP}}]
 Un \BBP è una tipologia di \CVD in cui vengono offerte ricompense monetarie in cambio dei report relativi alle \vulnerability identificate \cite{walshe2023bountythesis2, walshe2022cvdpaper, akgul2020bughunters}.
-\end{definizione}
+%\end{definizione}
 
-\begin{definizione}[\emph{\acl{VDP}}]
+\medskip
+
+%\begin{definizione}[\emph{\acl{VDP}}]
 Un \CVD in cui non vengono offerte ricompense monetarie viene normalmente chiamato \VDP \cite{walshe2023bountythesis2, walshe2022cvdpaper, akgul2020bughunters}.
-\end{definizione}
+%\end{definizione}
 
 \subsection{Terminologia}
 
-% RIMUOVERE L'AMBIENTE DEFINIZIONE CHE MI SEMBRA APPESANTISCA
-
-\begin{definizione}[\emph{\acl{BI}}]
+%\begin{definizione}[\emph{\acl{BI}}]
 Con il termine \BI indichiamo l'organizzazione (e.g. azienda, università o ente) che, attraverso un \BBP, offre ricompense per le \vulnerability presenti nei propri prodotti software \cite{canidio2021verioss}.
-\end{definizione}
+%\end{definizione}
 
-\begin{definizione}[\emph{\acl{BH}} (prima versione)]
-Con l'espressione \BH denotiamo un professionista, un ricercatore o un'appassionato di sicurezza informatica, indipendente rispetto al \BI, che cerca \vulnerability nel software designato da quest'ultimo \cite{canidio2021verioss}. 
-\end{definizione}
+\medskip
 
-\begin{definizione}[\emph{\acl{BH}} (seconda versione)]
+%\begin{definizione}[\emph{\acl{BH}} (prima versione)]
+%Con l'espressione \BH denotiamo la persona (e.g. professionista, ricercatore o appassionato di sicurezza informatica), indipendente rispetto al \BI, che cerca \vulnerability nel software designato da quest'ultimo \cite{canidio2021verioss}. 
+%\end{definizione}
+
+\medskip
+
+%\begin{definizione}[\emph{\acl{BH}} (seconda versione)]
 Con l'espressione \BH denotiamo un \whitehathacker, indipendente rispetto al \BI, che cerca \vulnerability nel software designato da quest'ultimo \cite{canidio2021verioss}. 
-\end{definizione}
+%\end{definizione}
 
-\begin{definizione}[\emph{\acl{BH}} (terza versione)]
-Con l'espressione \BH denotiamo la persona (e.g. professionista, ricercatore o appassionato di sicurezza informatica), indipendente rispetto al \BI, che cerca \vulnerability nel software designato da quest'ultimo \cite{canidio2021verioss}. 
-\end{definizione}
+\medskip
 
-\begin{definizione}[\BugBounty]
+%\begin{definizione}[\BugBounty]
 Con \bugbounty indichiamo una descrizione, pubblicata dal \BI, che specifica quali applicazioni software sono testabili, quali tipologie di \vulnerability sono considerabili valide, le ricompense proposte e altri vincoli legali che il \BH dovrà rispettare \cite{hoffman2021bountychain, hoffman2020bountychain}. In sostanza una \bugbounty specifica le linee guida, spesso identificate con il termine di \emph{safe harbor} o \emph{rules of engagement}, che permettono al \BH di ricercare \vulnerability in modo del tutto legale \cite{walshe2022cvdpaper, walshe2020bountypaper, walshe2023bountythesis3}.
-\end{definizione}
+%\end{definizione}
 
-\begin{definizione}[\BountyReward]
+\medskip
+
+%\begin{definizione}[\BountyReward]
 \Bountyreward è il termine con cui denotiamo la ricompensa monetaria offerta dal \BI \cite{hoffman2021bountychain}; normalmente, il valore di tale ricompensa dipenderà dalla tipologia e dalla criticità della \vulnerability rilevata \cite{canidio2021verioss}.
-\end{definizione}
+%\end{definizione}
 
-\begin{definizione}[\BugReport]
+\medskip
+
+%\begin{definizione}[\BugReport]
 Con l'espressione \bugreport indichiamo una descrizione dettagliata, prodotta dal \BH, per descrivere una \vulnerability identificata \cite{hoffman2021bountychain}.
-\end{definizione}
+%\end{definizione}
 
 \subsection{Interazione}
-
-%\subsection{Interazione tra issuer e hunter}
 
 Descriviamo brevemente l'interazione tra il \BI e il \BH \cite{hoffman2021bountychain}:
 \begin{enumerate}
@@ -139,39 +153,49 @@ Descriviamo brevemente l'interazione tra il \BI e il \BH \cite{hoffman2021bounty
 
 \end{enumerate}
 
-\subsection{Classificazione}
+%\subsection{Classificazione}
 
-% INGLOBARE QUESTA SEZIONE CON LA PRECENDENTE
+\begin{figure}[tbhp]
+\centering
+\includegraphics[scale=0.75]{bbp/bbp-internal-interaction-icons}
+\caption[Interazione nel caso di \internalBBP]{Interazione tra \BI e \BH nel caso di \internalBBP e \bugreport valido.}
+\label{figure:bbp-internal}
+\end{figure}
 
-% AGGIUNGERE GRAFICO
+\begin{figure}[tbhp]
+\centering
+\includegraphics[scale=0.75]{bbp/bbp-platform-interaction-icons}
+\caption[Interazione nel caso di \bugbountyplatform]{Interazione tra \BI e \BH nel caso di \bugbountyplatform e \bugreport valido.}
+\label{figure:bbp-platform}
+\end{figure}
 
 Possiamo classificare i \BBP in base al fatto che l'interazione tra il \BI e il \BH avvenga direttamente o tramite da un intermediario:
 
 \begin{itemize}
 
-\item \InternalBBP: sono \BBP gestiti direttamente dal \BI \cite{hoffman2021bountychain}; in tal caso la comunicazione tra il \BI ed il \BH avviene in modo diretto.
+\item \InternalBBP: sono \BBP gestiti direttamente dal \BI \cite{hoffman2021bountychain}; in tal caso, come possiamo osservare in \cref{figure:bbp-internal}, la comunicazione tra il \BI e il \BH avviene in modo diretto.
 %solo le aziende di grandi dimensioni - come Google, Meta o Microsoft - possono permettersi di gestire dei programmi interni \cite{walshe2023bountythesis3}.
 
-\item \BugBountyPlatform: sono piattaforme che fungono da mediatore tra il \BI ed il \BH \cite{hoffman2021bountychain}; 
-esempi di queste piattaforme sono \HackerOne, \Intigriti, \Bugcrowd, \Synack e \Yogosha \cite{walshe2023bountythesis3, walshe2020bountypaper}. 
+\item \BugBountyPlatform: sono piattaforme che fungono da mediatore tra il \BI ed il \BH \cite{hoffman2021bountychain}; di conseguenza, come illustrato in \cref{figure:bbp-platform}, la comunicazione avviene in modo indiretto.
+Esempi di queste piattaforme sono \HackerOne, \Intigriti, \Bugcrowd, \Synack e \Yogosha \cite{walshe2023bountythesis3, walshe2020bountypaper}. 
 %aziende di piccole o media dimensioni di solito si affidano a questo genere di soluzioni \cite{walshe2023bountythesis3, walshe2020bountypaper};
 
 \end{itemize}
 
-\subsection{Storia}
-
-%\subsection{Adozione e vantaggi}
+\subsection{Adozione}
 
 Alla fine del 1995, l'azienda statunitense Netscape fu la prima a implementare un \BBP al fine di individuare eventuali difetti software presenti nel web browser Netscape Navigator; tuttavia, bisognerà attendere i primi anni duemila affinché l'uso di questi programmi cominci a diffondersi maggiormente \cite{hoffman2021bountychain}.
 Ad oggi, le aziende di piccole o medie dimensioni che desiderano avviare un \BBP si affidano a una delle varie \bugbountyplatform esistenti, mentre solo le aziende di grandi dimensioni -- come \GoogleBBP, \MetaBBP o {\MicrosoftBBP} -- possono permettersi di gestire dei programmi interni \cite{walshe2023bountythesis3}.
 
-\subsection{Vantaggi}
+%\subsection{Vantaggi e limitazioni}
 
-% INGLOBARE CON LA SEZIONE PRECEDENTE
+\subsection{Vantaggi}
 
 L'adozione dei \BBP offre alla comunità degli \hacker una via legale per la segnalazione delle \vulnerability, disincentivando così l'utilizzo del mercato nero \cite{fryer2017bugbounty, walshe2020bountypaper, walshe2023bountythesis3} e amplificando la probabilità che vengano scoperti \bug che altrimenti sarebbero rimasti nascosti agli occhi degli eventuali team di cybersecurity a disposizione delle aziende \cite{walshe2020bountypaper}.
 
 \subsection{Limitazioni}
+
+\medskip
 
 Una delle limitazioni più importanti degli \internalBBP è il fatto che, una volta che il \BI ha ricevuto il \bugreport, questi è fortemente incentivano a considerare i bug segnalati come poco critici o non validi al fine di ridurre al minimo la ricompensa per il \BH \cite{canidio2021verioss, akgul2023bughunters}; questa situazione rende il mercato inefficiente per i \BH che risultano, di conseguenza, portati a cercare altre vie per la vendita dei bug \cite{canidio2021verioss}.
 
@@ -215,8 +239,6 @@ Seguendo il \fullpublicdisclosure, il \BI è motivato a realizzare un aggiorname
 L'impiego del \responsibledisclosure incentiva il \BI attraverso il potenziale danno di immagine dovuto alla diffusione pubblica della \vulnerability, fornendogli al contempo il modo di correggerla prima che attori malevoli possano sfruttarla. Quest'approccio, purtroppo, non risulta privo di problemi: il suo utilizzo presuppone il coinvolgimento di un mediatore tra \BI e \BH, presentando così limitazioni paragonabili a quelle associate all'utilizzo delle \bugbountyplatform.
 
 \subsection{Riferimenti bibliografici aggiuntivi}
-
-% RICONTROLLA PRIMA DELLA CONSEGNA
 
 Per eventuali approfondimenti sui \BBP, oltre ai lavori già citati nel testo, si rimanda ai seguenti documenti: 
 \begin{itemize}
