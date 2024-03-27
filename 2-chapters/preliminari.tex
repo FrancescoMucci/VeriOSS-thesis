@@ -138,7 +138,7 @@ Con \bugbounty indichiamo una descrizione, pubblicata dal \BI, che specifica qua
 Con l'espressione \bugreport indichiamo una descrizione dettagliata, prodotta dal \BH, per descrivere una \vulnerability identificata \cite{hoffman2021bountychain}.
 %\end{definizione}
 
-\subsection{Interazione}
+\subsection{Interazione e classificazione}
 
 Descriviamo brevemente l'interazione tra il \BI e il \BH \cite{hoffman2021bountychain}:
 \begin{enumerate}
@@ -155,18 +155,32 @@ Descriviamo brevemente l'interazione tra il \BI e il \BH \cite{hoffman2021bounty
 
 %\subsection{Classificazione}
 
-\begin{figure}[tbhp]
-\centering
-\includegraphics[scale=0.75]{bbp/bbp-internal-interaction-icons}
-\caption[Interazione nel caso di \internalBBP]{Interazione tra \BI e \BH nel caso di \internalBBP e \bugreport valido.}
-\label{figure:bbp-internal}
-\end{figure}
+%\begin{figure}[tbhp]
+%\centering
+%\includegraphics[scale=0.65]{bbp/bbp-internal-icons-small}
+%\caption[Interazione nel caso di \internalBBP]{interazione tra \BI e \BH nel caso di \internalBBP e \bugreport valido.}
+%\label{figure:bbp-internal}
+%\end{figure}
+%
+%\begin{figure}[tbhp]
+%\centering
+%\includegraphics[scale=0.65]{bbp/bbp-platform-icons-small}
+%\caption[Interazione nel caso di \bugbountyplatform]{interazione tra \BI e \BH nel caso di \bugbountyplatform e \bugreport valido.}
+%\label{figure:bbp-platform}
+%\end{figure}
 
-\begin{figure}[tbhp]
+\begin{figure}[tbhp]%
 \centering
-\includegraphics[scale=0.75]{bbp/bbp-platform-interaction-icons}
-\caption[Interazione nel caso di \bugbountyplatform]{Interazione tra \BI e \BH nel caso di \bugbountyplatform e \bugreport valido.}
-\label{figure:bbp-platform}
+\subfloat[Interazione diretta tramite \emph{internal \acs{BBP}}.]{%
+\includegraphics[scale=0.80]{bbp/bbp-internal-icons-small}%
+\label{figure:bbp-internal}%
+}\\
+\subfloat[Interazione indiretta tramite \emph{bug bounty platform}.]{%
+\includegraphics[scale=0.80]{bbp/bbp-platform-icons-small}%
+\label{figure:bbp-platform}%
+}%
+\caption[Interazione tra \emph{\acs{BI}} e \emph{\acs{BH}}]{interazione tra \BI e \BH nel caso di \bugreport valido.}
+\label{figure:bbp-interaction}
 \end{figure}
 
 Possiamo classificare i \BBP in base al fatto che l'interazione tra il \BI e il \BH avvenga direttamente o tramite da un intermediario:
@@ -245,9 +259,9 @@ Per eventuali approfondimenti sui \BBP, oltre ai lavori già citati nel testo, s
 
 \item Walshe (2023), "Supporting Data-driven Software Development Life-cycles with Bug Bounty Programmes" \cite{walshe2023bountythesis};
 
-\item Malladi \etAl (2020), "Bug Bounty Programs for Cybersecurity: Practices, Issues, and Recommendations" \cite{malladi2020bugbounty};
+\item Malladi \etAl (2020), "Bug Bounty Programs for Cybersecurity: Practices, Issues, and Recommendations" \cite{malladi2020bugbounty}.
 
-\item Fryer e Simperl (2017), "Web Science Challenges in Researching Bug Bounties" \cite{fryer2017bugbounty}.
+%\item Fryer e Simperl (2017), "Web Science Challenges in Researching Bug Bounties" \cite{fryer2017bugbounty}.
 
 \end{itemize}
 
