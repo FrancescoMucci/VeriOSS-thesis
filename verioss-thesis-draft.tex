@@ -74,6 +74,8 @@
 \lstlistoflistings
 % Using the package "listings" for typesetting source code snippets, you can use the "\lstlistoflistings" macro to request the production of a list of source codes snippets.
 
+\include{3-appendix/draft/riferimenti}
+
 %--------------------------------------------------------------
 
 %---------------------MAINMATTER-------------------------------
@@ -117,8 +119,6 @@
 \backmatter
 % The "\backmatter" command leaves the page numbering alone but switches the chapters back to being not numbered.
 
-\include{3-appendix/draft/riferimenti}
-
 % To generate the bibliography we rely on BibTex, a tool which comes bundled as standard with LaTeX: using this tool we store all references in a bibliographic file with .bib extension. This file can be referenced in any LaTeX document and can also be split over many files, for example, dividing the bibliography by subtopics.
 
 \bibliographystyle{babunsrt-fl}
@@ -127,15 +127,15 @@
 \addTocChapter{Bibliografia}
 % To manually add the bibliography entry into the table of contents.
 
-\bibliography{4-back/bib/dedication,4-back/bib/verioss,4-back/bib/bug-bounty,4-back/bib/bug-bounty-blockchain,4-back/bib/fair-exchange,4-back/bib/fair-exchange-blockchain,4-back/bib/proof-of-knowledge,4-back/bib/proof-of-knowledge-blockchain,4-back/bib/blockchain-ethereum-solidity,4-back/bib/blockchain-applications,4-back/bib/blockchain-oracle,4-back/bib/offchain-data-storages,4-back/bib/verification,4-back/bib/verification-smart-contracts,4-back/bib/debugging,4-back/bib/weakest-precondition-calculus,4-back/bib/symbolic-execution,4-back/bib/symbolic-execution-angr,4-back/bib/symbolic-execution-backward}
+\bibliography{4-back/bib/dedication,4-back/bib/verioss,4-back/bib/bug-bounty,4-back/bib/bug-bounty-blockchain,4-back/bib/fair-exchange,4-back/bib/fair-exchange-blockchain,4-back/bib/proof-of-knowledge,4-back/bib/proof-of-knowledge-blockchain,4-back/bib/blockchain-ethereum-solidity,4-back/bib/blockchain-applications,4-back/bib/blockchain-oracle,4-back/bib/offchain-data-storages,4-back/bib/verification,4-back/bib/verification-smart-contracts,4-back/bib/debugging,4-back/bib/weakest-precondition-calculus,4-back/bib/symbolic-execution,4-back/bib/symbolic-execution-angr,4-back/bib/symbolic-execution-backward,4-back/bib/cs-basics}
 % The command "\bibliography{<bib-file1>,<bib-file2>,...,<bib-fileN>}" specifies the .bib files you wish to use.
 
 % To resolve all the citation references and generate the bibliography as expected, BibTeX needs some extra compilation steps: assuming our LATEX document is in a file named thesis.tex (and that we are using pdflatex) we need to use the following sequence of commands: pdflatex thesis; bibtex thesis; pdflatex thesis; pdflatex thesis.
 
-%\addTocChapter{Indice analitico}
+\addTocChapter{Indice analitico}
 % To manually add the index entry into the table of contents.
 
-%\printindex
+\printindex
 % To get an analytical index you must first include "\usepackage{imakeidx}", add the "\makeindex" in the document preamble and compile the document, then run the system command "makeindex", and then compile the document again. If you are using a special localization by means of the babel package, the title will be translated accordingly.
 
 \addChapterBookmark{Ringraziamenti}{bookmark:ringraziamenti}
